@@ -1,16 +1,24 @@
 {
-    "name": "repro/doctrine-symfony-stall",
-    "description": "Synthetic PHPantom inference performance reproduction",
+    "name": "repro/symfony-doctrine-analysis-stall",
     "type": "project",
     "license": "MIT",
     "require": {
         "php": "^8.4",
         "doctrine/orm": "3.6.1",
-        "symfony/dependency-injection": "7.4.22"
+        "symfony/framework-bundle": "^7.4",
+        "symfony/cache": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
     },
     "autoload": {
         "psr-4": {
             "Repro\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Repro\\Tests\\": "tests/"
         }
     },
     "config": {
