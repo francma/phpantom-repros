@@ -1,0 +1,20 @@
+{
+    "name": "repro/closure-property-chain",
+    "description": "Synthetic PHPantom navigation reproduction",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Repro\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4.0"
+        },
+        "allow-plugins": false
+    }
+}

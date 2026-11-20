@@ -1,0 +1,29 @@
+{
+    "name": "repro/symfony-test-container-alias",
+    "description": "Synthetic PHPantom navigation reproduction",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "symfony/framework-bundle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Repro\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4.0"
+        },
+        "allow-plugins": false
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Repro\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    }
+}

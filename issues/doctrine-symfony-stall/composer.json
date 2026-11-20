@@ -1,0 +1,22 @@
+{
+    "name": "repro/doctrine-symfony-stall",
+    "description": "Synthetic PHPantom inference performance reproduction",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "doctrine/orm": "3.6.1",
+        "symfony/dependency-injection": "7.4.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Repro\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4.0"
+        },
+        "allow-plugins": false
+    }
+}
